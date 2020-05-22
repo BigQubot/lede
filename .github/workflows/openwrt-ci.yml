@@ -7,14 +7,17 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: OpenWrt-CI
+name: BPI-R2-OpenWrt-CI
 
 on:
-  schedule:
-    - cron: 0 20 * * *
+  #schedule:
+  #  - cron: 0 20 * * *
+  #push:
+  #  tags:
+  #    - '*'
   push:
-    tags:
-      - '*'
+    schedule:
+      -master  
 
 jobs:
 
